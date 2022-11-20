@@ -1,4 +1,5 @@
 ﻿using ShipShape.Controllers.Dtos;
+using ShipShape.Domain.Entities;
 using ShipShape.Infra.Repositories.Cities;
 
 namespace ShipShape.Application.Cities
@@ -14,7 +15,9 @@ namespace ShipShape.Application.Cities
 
         public async Task<CityOfferDto> GetCityOffer(CityFormsDto forms)
         {
-            var city = await _cityRepository.GetByForms(forms);
+            //TODO implementar banco
+            //var city = await _cityRepository.GetByForms(forms);
+            var city = new City(1, "NovaYork", 1,1);
 
             var offer = city.BuildOffer();
 

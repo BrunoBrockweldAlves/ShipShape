@@ -15,7 +15,7 @@ namespace ShipShape.Controllers
             _cityService = cityService;
         }
 
-        [HttpGet(Name = "GetCity")]
+        [HttpPost(Name = "GetCity")]
         public async Task<CityOfferDto> Get([FromBody] CityFormsDto dto)
         {
             return await _cityService.GetCityOffer(dto);
