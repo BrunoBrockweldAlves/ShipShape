@@ -1,5 +1,4 @@
-﻿using Dapper;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using ShipShape.Domain.Entities;
 
 namespace MeuCampeonatoAPI.Domain.Data.Context
@@ -9,5 +8,6 @@ namespace MeuCampeonatoAPI.Domain.Data.Context
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
 
         public DbSet<City> Cities { get; set; }
+
     }
 }

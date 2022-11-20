@@ -4,7 +4,7 @@
     {
         public int Food { get; set; }
         public int Stay { get; set; }
-        public int entertainment { get; set; }
+        public int Entertainment { get; set; }
 
         private CostScore() { }
 
@@ -12,7 +12,7 @@
         {
             Food = food;
             Stay = stay;
-            this.entertainment = entertainment;
+            this.Entertainment = entertainment;
         }
     }
 }
