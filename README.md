@@ -8,10 +8,22 @@
   </h1>
 </a>
 
+## Introduction
+
 ShipShape is a powerful API which aim is to provide the most suitable destinies for your next travel.
 </br>
 Since it's delivered on .NET 7.0, in order to contribute to the projet its necessary to download [.NET SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
 </br>
-Make the changes you wanna see
-</br>
-Then just run the command on repository root: `dotnet run ShipShape.sln`
+
+## Installation
+
+Run the following command on root folder
+
+```bash
+npm init docusaurus@latest
+```
+
+## Contributors
+
+| [<img src="https://avatars.githubusercontent.com/u/55036445?v=4" width=115><br><sub>Luis Fusco</sub>](https://github.com/fuscode) |  [<img src="https://avatars.githubusercontent.com/u/55096120?v=4" width=115><br><sub>Bruno Brockweld Alves</sub>](https://github.com/BrunoBrockweldAlves) |  [<img src="https://avatars.githubusercontent.com/u/8989346?v=4" width=115><br><sub>Anna Sousa</sub>](https://github.com/alexfelipe) |  [<img src="https://avatars.githubusercontent.com/u/8989346?v=4" width=115><br><sub>Léo Costa</sub>](https://github.com/alexfelipe) |  [<img src="https://avatars.githubusercontent.com/u/8989346?v=4" width=115><br><sub>Ryan Strack</sub>](https://github.com/alexfelipe) |
+| :---: | :---: | :---: | :---: | :---: |
