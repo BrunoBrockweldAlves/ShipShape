@@ -5,7 +5,7 @@ namespace ShipShape.Domain.Entities
     public class City
     {
         public int Id { get; set; }
-        public int Name { get; set; }
+        public string Name { get; set; }
         public int Latitude { get; set; }
         public int Longitude { get; set; }
         public virtual CostScore CostScore { get; set; }
@@ -15,7 +15,7 @@ namespace ShipShape.Domain.Entities
 
         private City() { }
 
-        public City(int id, int name, int latitude, int longitude)
+        public City(int id, string name, int latitude, int longitude)
         {
             Id = id;
             Name = name;
