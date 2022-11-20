@@ -1,10 +1,8 @@
 using MeuCampeonatoAPI.Domain.Data.Context;
 using Microsoft.EntityFrameworkCore;
+using ShipShape.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
-
-// TODO
-// Add services to the container.
 
 builder.Services.AddControllers();
 builder.Services.AddDbContext<DataContext>(options =>
@@ -13,6 +11,8 @@ builder.Services.AddDbContext<DataContext>(options =>
 });
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddServices();
+builder.Services.AddRepositories();
 
 var app = builder.Build();
 

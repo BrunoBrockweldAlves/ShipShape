@@ -26,22 +26,17 @@ namespace ShipShape.Infra.Repositories.Cities
                             Id,
                             Name
                          FROM City
-                         WHERE Id NOT IN ({GetRefusedIdsRequest(forms)})
+                         WHERE Id NOT IN (@RefusedCities)
                             GROUP BY Id
-                         ORDER BY SUM({GetTagsRequest(forms)}) DESC";
+                         ORDER BY SUM(@ChosenTags) DESC";
 
-            //TODO implement formsDto
-            return await _context.Database.GetDbConnection().QueryFirstAsync<City>(sql);
-        }
+            var parameters = new
+            {
+                RefusedCities = forms.RefusedCities,
+                ChosenTags = forms.ChosenTags
+            };
 
-        private string GetTagsRequest(CityFormsDto forms)
-        {
-            return string.Join(',', forms.ChosenTags);
-        }
-
-        private string GetRefusedIdsRequest(CityFormsDto forms)
-        {
-            return string.Join(',', forms.RefusedCities);
+            return await _context.Database.GetDbConnection().QueryFirstAsync<City>(sql, parameters);
         }
     }
 }
