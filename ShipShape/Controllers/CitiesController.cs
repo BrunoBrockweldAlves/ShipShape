@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using ShipShape.Application.Cities;
 using ShipShape.Controllers.Dtos;
 
 namespace ShipShape.Controllers
@@ -7,16 +8,17 @@ namespace ShipShape.Controllers
     [Route("[controller]")]
     public class CitiesController : ControllerBase
     {
+        private ICityService _cityService;
 
-        public CitiesController()
+        public CitiesController(ICityService cityService)
         {
+            _cityService = cityService;
         }
 
         [HttpGet(Name = "GetCity")]
-        public CityOfferDto Get([FromBody] CityFormsDto dto)
+        public async Task<CityOfferDto> Get([FromBody] CityFormsDto dto)
         {
-            //TODO Implementar 
-            return default;
+            return await _cityService.GetCityOffer(dto);
         }
     }
 }

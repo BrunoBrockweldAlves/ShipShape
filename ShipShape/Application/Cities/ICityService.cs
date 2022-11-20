@@ -4,6 +4,6 @@ namespace ShipShape.Application.Cities
 {
     public interface ICityService
     {
-        CityOfferDto GetCityOffer(CityFormsDto forms);
+        Task<CityOfferDto> GetCityOffer(CityFormsDto forms);
     }
 }

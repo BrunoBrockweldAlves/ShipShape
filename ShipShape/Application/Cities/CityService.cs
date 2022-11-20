@@ -12,9 +12,13 @@ namespace ShipShape.Application.Cities
             _cityRepository = cityRepository;
         }
 
-        public CityOfferDto GetCityOffer(CityFormsDto forms)
+        public async Task<CityOfferDto> GetCityOffer(CityFormsDto forms)
         {
-            return default;
+            var city = await _cityRepository.GetByForms(forms);
+
+            var offer = city.BuildOffer();
+
+            return offer;
         }
     }
 }

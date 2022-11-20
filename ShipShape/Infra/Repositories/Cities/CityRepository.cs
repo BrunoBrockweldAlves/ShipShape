@@ -15,11 +15,6 @@ namespace ShipShape.Infra.Repositories.Cities
             _context = context;
         }
 
-        public async Task<IEnumerable<City>> GetAll()
-        {
-            return await _context.Cities.ToListAsync();
-        }
-
         public async Task<City> GetByForms(CityFormsDto forms)
         {
             var sql = @$"SELECT TOP 1 

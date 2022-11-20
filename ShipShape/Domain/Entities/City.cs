@@ -1,4 +1,6 @@
-﻿namespace ShipShape.Domain.Entities
+﻿using ShipShape.Controllers.Dtos;
+
+namespace ShipShape.Domain.Entities
 {
     public class City
     {
@@ -20,5 +22,7 @@
             Latitude = latitude;
             Longitude = longitude;
         }
+
+        public CityOfferDto BuildOffer() => new() { Id = Id, Name = Name};
     }
 }
