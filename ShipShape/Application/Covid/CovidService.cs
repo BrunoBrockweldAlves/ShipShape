@@ -28,7 +28,7 @@ namespace ShipShape.Application.Covid
 
                 using (var httpClient2 = new HttpClient())
                 {
-                    using (var request = new HttpRequestMessage(new HttpMethod("GET"), "https://test.api.amadeus.com/v2/duty-of-care/diseases/covid19-area-report?countryCode=US&language=EN"))
+                    using (var request = new HttpRequestMessage(new HttpMethod("GET"), $"https://test.api.amadeus.com/v2/duty-of-care/diseases/covid19-area-report?countryCode={countryCode}&language=EN"))
                     {
                         request.Headers.TryAddWithoutValidation("accept", "application/json");
                         request.Headers.TryAddWithoutValidation("Authorization", "Bearer KzVXtRwUyLODqJFqyAnbFaGlrciy");
