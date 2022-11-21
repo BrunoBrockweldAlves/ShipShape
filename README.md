@@ -17,6 +17,8 @@ Você pode acessar o destino no metaverso e ver com seus próprios olhos como é
 E se você ainda assim não estiver satisfeito ou quiser apesar se divertir mais, basta o clique de um botão para explorar mais universos que tem tuuudo a ver com você 😉.
 </br>
 
+[# Venha conhecer!](https://shipshape.netlify.app)
+
 | Ambiente | Stack |
 | ------ | ------ |
 | Backend | C# .Net 7 |
