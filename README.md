@@ -19,10 +19,16 @@ E se você ainda assim não estiver satisfeito ou quiser apesar se divertir mais
 
 ## [Venha conhecer!](https://shipshape.netlify.app)
 
+# Requisitos técnicos
+
 | Ambiente | Stack |
 | ------ | ------ |
 | Backend | C# .Net 7 |
 | FrontEnd | React 18.2.0 |
 | Database | MySql |
 
+Para executar nosso Backend é necessário possuir o [.Net7 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-7.0.100-windows-x64-installer)
 
+Para executar nosso Frontend é necessário instalar o [NPM](https://nodejs.org/dist/v18.12.1/node-v18.12.1-x64.msi)
+
+O banco de dados deve ser relacional, podendo ser o [MySql](https://www.mysql.com/downloads/) (pago) ou [SqlServer](https://go.microsoft.com/fwlink/?linkid=866658) (gratuito)
