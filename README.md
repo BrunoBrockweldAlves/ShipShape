@@ -1,13 +1,8 @@
 # ShipShape
-<a>
-  <h1 align="center">
-    <picture href="https://shipshape.netlify.app">
-      <source media="(prefers-color-scheme: dark)" srcset="https://shipshape.netlify.app/assets/ShipShape_Logo.83e27d70.png">
-      <img alt="Flutter" width="50%" height="50%" src="https://shipshape.netlify.app/assets/ShipShape_Logo.83e27d70.png">
-    </picture>
-  </h1>
-</a>
-[![Website](https://shipshape.netlify.app/assets/ShipShape_Logo.83e27d70.png)](https://travis-ci.org/joemccann/dillinger)
+
+
+[![Website](https://shipshape.netlify.app/assets/ShipShape_Logo.83e27d70.png)](https://shipshape.netlify.app)
+
 #### Resumo
 
 ShipShape é seu melhor amigo na hora de escolher a viagem perfeita!
