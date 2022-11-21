@@ -1,6 +1,3 @@
-# ShipShape
-
-
 [![Website](https://shipshape.netlify.app/assets/ShipShape_Logo.83e27d70.png)](https://shipshape.netlify.app)
 
 #### Resumo
