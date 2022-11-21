@@ -7,7 +7,9 @@
     </picture>
   </h1>
 </a>
+[![Website](https://shipshape.netlify.app/assets/ShipShape_Logo.83e27d70.png)](https://travis-ci.org/joemccann/dillinger)
 #### Resumo
+
 ShipShape é seu melhor amigo na hora de escolher a viagem perfeita!
 - Você possui alguma restrição ou deficiência? 
 - Precisa levar os pets junto? 
@@ -26,7 +28,7 @@ E se você ainda assim não estiver satisfeito ou quiser apesar se divertir mais
 
 | Ambiente | Stack |
 | ------ | ------ |
-| Backend | c# .Net 7 |
+| Backend | C# .Net 7 |
 | FrontEnd | React 18.2.0 |
 | Database | MySql |
 
