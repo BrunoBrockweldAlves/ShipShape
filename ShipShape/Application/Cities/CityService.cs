@@ -15,9 +15,9 @@ namespace ShipShape.Application.Cities
 
         public async Task<CityOfferDto> GetCityOffer(CityFormsDto forms)
         {
-            //TODO implementar banco
-            //var city = await _cityRepository.GetByForms(forms);
-            var city = new City(1, "NovaYork", 1,1);
+            //TODO implementar repo
+            var city = await _cityRepository.GetByForms(forms);
+            //var city = new City(1, "NovaYork", 1,1);
 
             var offer = city.BuildOffer();
 
