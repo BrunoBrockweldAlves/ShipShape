@@ -14,10 +14,10 @@ namespace ShipShape.Controllers
             _covidService = covidService;
         }
 
-        [HttpGet(Name = "GetToken")]
-        public async Task<string> Get()
+        [HttpGet(Name = "GetToken/{country}")]
+        public async Task<string> Get([FromQuery] string country)
         {
-            return await _covidService.GetAsync();
+            return await _covidService.GetAsync(country);
         }
     }
 }

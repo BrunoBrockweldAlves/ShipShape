@@ -2,6 +2,6 @@
 {
     public interface ICovidService
     {
-        Task<string> GetAsync();
+        Task<string> GetAsync(string country);
     }
 }
