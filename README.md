@@ -1,7 +1,5 @@
 [![Website](https://shipshape.netlify.app/assets/ShipShape_Logo.83e27d70.png)](https://shipshape.netlify.app)
 
-#### Resumo
-
 ShipShape é seu melhor amigo na hora de escolher a viagem perfeita!
 - Você possui alguma restrição ou deficiência? 
 - Precisa levar os pets junto? 
